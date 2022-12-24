@@ -1,0 +1,26 @@
+backend file: npm init -y
+backend file: npm i bcrypt cloudinary cookie-parser concurrently cors dotenv express express-fileupload jsonwebtoken mongoose
+backend file: npm i -D nodemon
+npx create-react-app client
+
+client: npm i bootstrap react-bootstrap
+client: npm i react-router-dom react-router-bootstrap
+client: npm i redux-persist
+client: npm i redux-thunk
+client: npm i redux
+client: npm i react-redux
+client: npm i axios
+client: npm i react-alice-carousel
+client: npm i @stripe
+client: npm i @stripe/react-stripe-js
+client: npm i @stripe/stripe-js
+client: npm i socket.io-client
+
+
+add in file client/public/index this script for use widget.cloudinary:
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+took from "https://support.cloudinary.com/hc/en-us/articles/360009420291-How-To-Migrate-To-The-Upload-Widget-v2-0"
+
+add in file client/public/index this script for use... :
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+took from "https://cdnjs.com/libraries/font-awesome"

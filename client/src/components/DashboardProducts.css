@@ -1,0 +1,10 @@
+.product__carouel--image{
+    width: 150px;
+    height: 150px;
+}
+
+.dashboard-product-preview{ 
+    width: 100px;
+    height: 100px;   
+    object-fit: cover;
+}
