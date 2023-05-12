@@ -1,8 +1,11 @@
-import React from 'react'
-import { Container, Nav, Row, Tab, Col } from 'react-bootstrap'
-import DashboardProducts from '../components/DashboardProducts'
-import OrderAdminPage from '../components/OrderAdminPage'
-import ClientAdminPage from './ClientAdminPage'
+import React from 'react';
+import { Container, Nav, Row, Tab, Col } from 'react-bootstrap';
+import DashboardProducts from '../components/DashboardProducts';
+import NewUsers from '../components/NewUsers';
+import OrderAdminPage from '../components/OrderAdminPage';
+import ClientAdminPage from './ClientAdminPage';
+import MoreInformation from '../components/MoreInformation';
+import OrdersStatusPie from '../components/OrdersStatusPie';
 
 function AdminDashboard() {
   return (
@@ -18,7 +21,10 @@ function AdminDashboard() {
                             <Nav.Link eventKey="orders">Orders</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="clients">clients</Nav.Link>
+                            <Nav.Link eventKey="clients">Clients</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="more information">More information</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Col>
@@ -32,6 +38,9 @@ function AdminDashboard() {
                         </Tab.Pane>
                         <Tab.Pane eventKey="clients">
                             <ClientAdminPage />
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="more information">
+                            <MoreInformation />
                         </Tab.Pane>
                     </Tab.Content>
                 </Col>

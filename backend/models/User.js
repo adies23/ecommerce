@@ -19,6 +19,11 @@ const UserSchema = mongoose.Schema({
             message: props => `${props.value} is not a valid email`
         }
     },
+    
+    timeCreated: {
+        type : Date, 
+        default: Date.now
+    },
 
     password: {        
         type: String,

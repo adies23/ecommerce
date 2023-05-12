@@ -28,9 +28,9 @@ function Home() {
                 ))}
             </div>    
         </div>
-        <div>
+        <div className="button-allproducts">
             <Link to="/category/all" style={{textAlign: "right", display: "block", textDecoration: "none"}}>
-                See more {">>"}
+                See all products {">>"}
             </Link>
         </div>
         <div className="recent-products-container container mt-4">

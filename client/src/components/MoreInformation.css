@@ -1,0 +1,15 @@
+.moreInformation{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.widget-container{
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+.newUserChart{
+    
+}

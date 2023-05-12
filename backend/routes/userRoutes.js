@@ -7,8 +7,9 @@ const Order = require('../models/Order');
 
 router.post('/signup', async(req,res) => {
     const {name, email, password} = req.body;
+    const timeCreated = new Date().getTime();
     try {
-        const user = await User.create({name, email, password});
+        const user = await User.create({name, email, password, timeCreated});
         res.json(user);
     } catch (e) {
         if(e.code === 11000) return res.status(400).send('Email already exist');

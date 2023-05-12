@@ -2,6 +2,7 @@ import axios from '../axios';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Loading from '../components/Loading';
+import Moment from 'moment';
 
 function ClientAdminPage() {
 
@@ -35,6 +36,7 @@ function ClientAdminPage() {
                     <th>Client Id</th>
                     <th>Client Name</th>
                     <th>Email</th>
+                    <th>Time Created</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +45,7 @@ function ClientAdminPage() {
                         <td>{user._id}</td>
                         <td>{user.name}</td>
                         <td>{user.email}</td>
+                        <td>{Moment(user.timeCreated).format('yyyy/MM/DD hh:mm:ss')}</td>
                     </tr>
                 ))}
             </tbody>
